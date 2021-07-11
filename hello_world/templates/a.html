@@ -6,11 +6,10 @@
 </head>
 <body>
 <h1>Hello</h1>
-<form acion="expression" method="post">
-
+<form action="/expression" method="post">
+    {% csrf_token %}
     <input type = "text" name ="text1">
     <input type = "submit">
-
 </form>
 </body>
 </html>

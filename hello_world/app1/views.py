@@ -8,8 +8,8 @@ def home(request):
 
 
 def expression(request):
-    a = request.post("text1")
-    return render(request, 'output.html',{'result':"testing...."})
+    a = request.POST['text1']
+    return render(request, 'output.html',{'result':a})
 
 
 
